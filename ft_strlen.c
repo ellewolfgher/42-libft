@@ -6,7 +6,7 @@
 /*   By: ewolfghe <ewolfghe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 01:34:35 by ewolfghe          #+#    #+#             */
-/*   Updated: 2022/09/02 01:43:56 by ewolfghe         ###   ########.fr       */
+/*   Updated: 2022/09/02 02:00:47 by ewolfghe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_strlen(const char *s)
 {
-	unsigned int	len;
+	size_t	len;
 
 	len = 0;
 	while (s[len] != '\0')

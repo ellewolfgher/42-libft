@@ -6,7 +6,7 @@
 #    By: ewolfghe <ewolfghe@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/01 21:20:53 by ewolfghe          #+#    #+#              #
-#    Updated: 2022/09/02 01:37:15 by ewolfghe         ###   ########.fr        #
+#    Updated: 2022/09/02 02:09:14 by ewolfghe         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,8 @@ CC = gcc
 FLAGS = -Wall -Wextra -Werror
 PATH_INCLUDE = ./
 
-SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strlen.c
+SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strlen.c \
+		ft_tolower.c
 
 OBJS = $(SRCS:.c=.o)
 
