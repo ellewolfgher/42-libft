@@ -82,6 +82,38 @@ Bonus
 ---
 
 <h2 align="center"> 
+Requirements 
+</h2>
+
+<p  align="center"> :warning: The project must be written in accordance with the <a href="https://github.com/42School/norminette/blob/master/pdf/en.norm.pdf" target="_blank">Norm</a> </p>
+The Norm  is a programming standard that defines a set of rules to follow when writing code at 42. It applies to all C projects within the Common Core by default, and
+to any project where it's specified. These are some of them:
+
+    Each function must be maximum 25 lines, not counting the function's own curly brackets.
+    
+    Each line must be at most 80 columns wide, comments included.
+    
+    A function can take 4 named parameters maximum.
+    
+    You can't declare more than 5 variables per function.
+    
+    You're not allowed to use: for , do...while , switch , case ,  goto  ,
+    ternary operators such as `?' and VLAs - Variable Length Arrays.
+  The norminette (as we call the norm at 42) is in python and open source.
+  
+  Its repository is available at https://github.com/42School/norminette.
+  
+   In addition to the Norm, the subject have other requirements, which are:
+  
+    It is forbidden to declare global variables.
+   
+    Using the command libtool to create your library is forbidden.
+    
+    Your Makefile must compile with the flags -Wall, -Wextra and -Werror.
+    
+---
+
+<h2 align="center"> 
 The Project
 </h2>
 
@@ -140,36 +172,4 @@ The Project
 - [`ft_lstiter`](ft_lstiter.c)	- applies a function to each element of a list.
 - [`ft_lstmap`](ft_lstmap.c)	- applies a function to each element of a list.
 
----
-
-<h2 align="center"> 
-Requirements 
-</h2>
-
-<p  align="center"> :warning: The project must be written in accordance with the <a href="https://github.com/42School/norminette/blob/master/pdf/en.norm.pdf" target="_blank">Norm</a> </p>
-The Norm  is a programming standard that defines a set of rules to follow when writing code at 42. It applies to all C projects within the Common Core by default, and
-to any project where it's specified. These are some of them:
-
-    Each function must be maximum 25 lines, not counting the function's own curly brackets.
-    
-    Each line must be at most 80 columns wide, comments included.
-    
-    A function can take 4 named parameters maximum.
-    
-    You can't declare more than 5 variables per function.
-    
-    You're not allowed to use: for , do...while , switch , case ,  goto  ,
-    ternary operators such as `?' and VLAs - Variable Length Arrays.
-  The norminette (as we call the norm at 42) is in python and open source.
-  
-  Its repository is available at https://github.com/42School/norminette.
-  
-   In addition to the Norm, the subject have other requirements, which are:
-  
-    It is forbidden to declare global variables.
-   
-    Using the command libtool to create your library is forbidden.
-    
-    Your Makefile must compile with the flags -Wall, -Wextra and -Werror.
-    
 ---
