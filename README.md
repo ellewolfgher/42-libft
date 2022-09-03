@@ -1,5 +1,3 @@
-# libft
-
 <h1 align=center>
 	<b>libft</b>
 </h1>
