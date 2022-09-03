@@ -1,5 +1,5 @@
 <h1 align=center>
-	<b>libft</b>
+	<b>libft - in progress</b>
 </h1>
 
 <h2 align=center>
