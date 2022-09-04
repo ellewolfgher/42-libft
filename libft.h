@@ -6,7 +6,7 @@
 /*   By: elle <elle@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/01 23:40:46 by ewolfghe          #+#    #+#             */
-/*   Updated: 2022/09/04 20:09:21 by elle             ###   ########.fr       */
+/*   Updated: 2022/09/04 20:14:26 by elle             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,6 @@ char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 void	*ft_calloc(size_t nmemb, size_t size);
 void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
 
 #endif
