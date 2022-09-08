@@ -6,7 +6,7 @@
 #    By: ewolfghe <ewolfghe@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/01 21:20:53 by ewolfghe          #+#    #+#              #
-#    Updated: 2022/09/08 00:43:22 by ewolfghe         ###   ########.fr        #
+#    Updated: 2022/09/08 18:02:47 by ewolfghe         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strle
 		ft_memmove.c ft_memchr.c ft_memcmp.c ft_atoi.c ft_strchr.c ft_strrchr.c \
 		ft_calloc.c ft_putchar_fd.c ft_putstr_fd.c ft_putnbr_fd.c ft_putendl_fd.c \
 		ft_itoa.c ft_strncmp.c ft_strnstr.c ft_strlcpy.c ft_strlcat.c ft_striteri.c \
+		ft_substr.c
 
 OBJS = $(SRCS:.c=.o)
 
