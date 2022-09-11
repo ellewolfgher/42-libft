@@ -6,7 +6,7 @@
 /*   By: ewolfghe <ewolfghe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 18:01:46 by ewolfghe          #+#    #+#             */
-/*   Updated: 2022/09/08 23:46:47 by ewolfghe         ###   ########.fr       */
+/*   Updated: 2022/09/12 00:00:16 by ewolfghe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!s)
 		return (NULL);
 	if (start > ft_strlen(s))
+	{
 		len = 0;
+		start = ft_strlen(s);
+	}
 	if (ft_strlen(s + start) < len)
 		len = ft_strlen(s + start);
 	sub = (char *)malloc(len + 1);
