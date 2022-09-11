@@ -6,7 +6,7 @@
 /*   By: ewolfghe <ewolfghe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/11 18:10:05 by ewolfghe          #+#    #+#             */
-/*   Updated: 2022/09/11 23:51:36 by ewolfghe         ###   ########.fr       */
+/*   Updated: 2022/09/12 00:03:37 by ewolfghe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,22 +77,3 @@ static void	ft_alloc_strs(char **res, char *s, char c, size_t strs)
 		j++;
 	}
 }
-
-//////////////////////////////////////////////////////////////////////
-
-	/* 
-	Allocates (with malloc(3)) and returns an array of strings obtained by 
-	splitting ’s’ using the character ’c’ as a delimiter. The array must be
-	ended by a NULL pointer.
-	PARAMETERS
-	#1. The string to be split.
-	#2. The delimiter character.
-	RETURN VALUES
-	The array of new strings resulting from the split. 
-	NULL if the allocation fails. 
-	*/
-
-	/* 
-	Perhaps I can substitute the delimiter char by '\0' and try to allocate the
-	strings in the array like this
-	 */
