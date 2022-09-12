@@ -6,7 +6,7 @@
 /*   By: ewolfghe <ewolfghe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/11 18:10:05 by ewolfghe          #+#    #+#             */
-/*   Updated: 2022/09/12 00:03:37 by ewolfghe         ###   ########.fr       */
+/*   Updated: 2022/09/12 21:17:48 by ewolfghe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ static size_t	ft_count_strs(char const *s, char c)
 	strs = 0;
 	is_str = 1;
 	i = 0;
-	while (s[i])
+	while (s != NULL && s[i])
 	{
 		if (s[i] != c && is_str)
 		{
