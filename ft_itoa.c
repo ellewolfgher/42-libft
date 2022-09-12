@@ -6,37 +6,54 @@
 /*   By: ewolfghe <ewolfghe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/05 17:15:28 by ewolfghe          #+#    #+#             */
-/*   Updated: 2022/09/05 22:27:49 by ewolfghe         ###   ########.fr       */
+/*   Updated: 2022/09/12 03:49:02 by ewolfghe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_itoa(int n)
+static int	ft_count(int n)
 {
-	int		i;
-	int		aux;
-	char	*chr;
+	int	len;
 
-	aux = n;
-	i = 1;
-	while (n >= 10)
+	len = 1;
+	while (n / 10)
 	{
 		n = n / 10;
-		i++;
+		len++;
 	}
-	chr = malloc(i + 1);
-	chr[i] = '\0';
-	i--;
+	return (len);
+}
+
+static int	ft_neg(int n)
+{
 	if (n < 0)
+		return (1);
+	return (0);
+}
+
+char	*ft_itoa(int n)
+{
+	char	*str;
+	int		len;
+	int		neg;
+
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
+	neg = ft_neg(n);
+	if (neg)
+		n = -n;
+	len = ft_count(n) + neg;
+	str = (char *)malloc(sizeof(char) * (len + 1));
+	if (!str)
+		return (NULL);
+	str[len] = '\0';
+	if (neg)
+		str[0] = '-';
+	while (len-- > neg)
 	{
-		chr[i] = '-';
-		ft_itoa(n * -1);
+		str[len] = n % 10 + 48;
+		n = n / 10;
 	}
-	while (i >= 0)
-	{
-		chr[i] = aux % 10 + 48;
-		aux = aux / 10;
-		i--;
-	}
+	return (str);
 }
