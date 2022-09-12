@@ -6,7 +6,7 @@
 #    By: ewolfghe <ewolfghe@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/01 21:20:53 by ewolfghe          #+#    #+#              #
-#    Updated: 2022/09/11 18:10:58 by ewolfghe         ###   ########.fr        #
+#    Updated: 2022/09/13 00:05:00 by ewolfghe         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,10 @@ SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strle
 
 OBJS = $(SRCS:.c=.o)
 
+BONUS_SRCS = ft_lstnew.c
+
+BONUS_OBJS = $(BONUS_SRCS:.c=.o)
+
 all: $(NAME)
 
 $(NAME): $(OBJS)
@@ -32,9 +36,17 @@ $(OBJS): $(SRCS)
 	cc $(FLAGS) -I $(PATH_INCLUDE) -c $(SRCS)
 
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJS) $(BONUS_OBJS)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+bonus: $(BONUS_OBJS)
+	ar -rc $(NAME) $(BONUS_OBJS)
+
+$(BONUS_OBJS): $(BONUS_SRCS)
+	cc $(FLAGS) -I $(PATH_INCLUDE) -c $(BONUS_SRCS)
+
+.PHONY: all clean fclean re
