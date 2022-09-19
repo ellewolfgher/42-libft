@@ -1,5 +1,5 @@
 <h1 align=center>
-	<b>LIBFT</b> <i>- in progress</i>
+	<b>LIBFT</b>
 </h1>
 
 <h2 align=center>
