@@ -1,7 +1,7 @@
 <h1 align=center>
 	<b>LIBFT</b>
 </h1>
-
+![libftstar](https://user-images.githubusercontent.com/90663982/191070000-37c62a6f-a81b-4589-b24a-7b5abe6c304c.png))
 <h2 align=center>
 	 <i>42 - Project #1</i>
 </h2>
