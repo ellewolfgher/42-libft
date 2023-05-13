@@ -2,12 +2,6 @@
 	<b>LIBFT</b>
 </h1>
 
-<div align=center>
-<img src=https://github.com/ellewolfgher/libft/blob/main/libft.png alt="42 Project Libft Bonus Badge"/>
-</div>
-
----
-
 <h2 align=center>
 	 <i>42 - Project #1</i>
 </h2>
@@ -15,6 +9,12 @@
 <p align=center>
 	In this repo you will find all the codes developed during the <i>libft</i> project, both <b>mandatory</b>'s Principal and Additional and <b>bonus</b> functions, as well as other functions that I may find useful later on. These functions must be compiled (through a <i>Makefile</i>) into a <b><i>libft.a</b></i> library for my own use further on the 42cursus' syllabus.
 </p>
+
+---
+
+<div align=center>
+<img src=https://github.com/ellewolfgher/libft/blob/main/libft.png alt="42 Project Libft Bonus Badge"/>
+</div>
 
 ---
 
