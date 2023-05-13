@@ -12,6 +12,12 @@
 
 ---
 
+<div align=center>
+<img src=https://github.com/ellewolfgher/libft/blob/main/libft.png alt="42 Project Libft Bonus Badge"/>
+</div>
+
+---
+
 <h3 align=center>
 Principal
 </h3>
